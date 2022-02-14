@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;900&display=swap"); */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -13,4 +18,125 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media (min-width: 0px) {
+  .section {
+    padding: 4rem 1rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 5rem 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section {
+    padding: 8rem 6rem;
+  }
+}
+
+.index .slick-list {
+  width: 90% !important;
+  margin: auto !important;
+}
+.index .slick-slider .slick-prev {
+  left: -20px;
+}
+.index .slick-slider .slick-next {
+  right: -20px;
+}
+
+.index .slick-slider .slick-arrow::before {
+  font-size: 40px;
+  color: #f9c933;
+}
+
+@media (max-width: 640px) {
+  .index .slick-slider .slick-prev {
+    left: 0px;
+  }
+  .index .slick-slider .slick-next {
+    right: 0px;
+  }
+}
+.contentHeroImg > span {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.contentLearnSlider .slick-slider {
+  width: 18rem !important;
+}
+
+.contentLearnSlider .slick-dots button::before {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: black;
+  opacity: 1;
+}
+
+.contentLearnSlider .slick-dots .slick-active button::before {
+  color: #f9c933;
+  opacity: 1;
+}
+
+.peopleSlider .slick-dots {
+  position: absolute;
+  bottom: 3rem;
+}
+
+.peopleSlider .slick-dots button::before {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: grey;
+  opacity: 1;
+}
+
+.peopleSlider .slick-dots .slick-active button::before {
+  color: #f9c933;
+  opacity: 1;
+}
+
+.designationSlider .slick-dots {
+  position: absolute;
+  bottom: -1rem;
+}
+@media (max-width: 768px) {
+  .designationSlider .slick-dots {
+    position: absolute;
+    bottom: 0rem;
+  }
+}
+.designationSlider .slick-dots button::before {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: black;
+  opacity: 1;
+}
+
+.designationSlider .slick-dots .slick-active button::before {
+  color: #f9c933;
+  opacity: 1;
+}
+
+.empathySlider .slick-dots button::before {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: black;
+  opacity: 1;
+}
+
+.empathySlider .slick-dots .slick-active button::before {
+  color: #f9c933;
+  opacity: 1;
 }
