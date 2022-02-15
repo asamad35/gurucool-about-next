@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-black py-6 footer">
-        <div className="container mx-auto">
+        <div className=" px-8 mx-auto">
           <div className="lg:flex justify-between items-center border-b pb-3 mb-12">
             <div className="lg:w-1/2 px-6">
               <ul className="flex">

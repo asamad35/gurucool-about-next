@@ -1,8 +1,6 @@
-import styles from "../styles/index.module.scss";
 import Image from "next/image";
 import tortoise from "../public/two_roads.gif";
 import network from "../public/social-image.png";
-import Head from "next/head";
 
 import HomeSlider from "./components/homeSlider";
 
@@ -41,7 +39,7 @@ export default function Home() {
 
       {/* section tortoise */}
       <section
-        className={`${styles.tortoise} section flex justify-center items-center max-w-6xl mx-auto`}
+        className={` section flex justify-center items-center max-w-6xl mx-auto`}
       >
         <div className="shadow-2xl rounded-3xl overflow-hidden flex justify-center items-center">
           <Image src={tortoise}></Image>
@@ -49,9 +47,7 @@ export default function Home() {
       </section>
 
       {/* section network */}
-      <section
-        className={`${styles.network} section max-w-full bg-primaryColor `}
-      >
+      <section className={` section max-w-full bg-primaryColor `}>
         <Image src={network}></Image>
 
         <div className="flex bg-primaryColor max-w-full m-auto md:px-12 md:flex-row md:justify-between md:items-center  border-slate-200 border-y-2 py-12 xs:flex-col xs:items-start xs:gap-4 xs:px-4 ">
@@ -66,7 +62,7 @@ export default function Home() {
       </section>
       {/* section.journey */}
       <section
-        className={`${styles.journey} section bg-[url('../public/hero-banner.jpg')] bg-cover h-screen relative overflow-hidden `}
+        className={` section bg-[url('../public/hero-banner.jpg')] bg-cover h-screen relative overflow-hidden `}
       >
         <div className="h-screen w-screen absolute top-0 left-0 bg-black opacity-60 "></div>
         <h1 className="text-primaryColor sm:text-6xl font-bold relative xs:text-4xl xs:translate-y-12 xs:text-center">
@@ -75,7 +71,7 @@ export default function Home() {
         <HomeSlider />
       </section>
       {/* section news */}
-      <section className={`${styles.news} section `}>
+      <section className={` section `}>
         <h1 className="text-center xs:text-4xl xs:font-medium xs:mb-2 md:mb-8 md:text-5xl">
           In the news
         </h1>
@@ -114,7 +110,7 @@ export default function Home() {
             src={company6}
             height="120px"
             width="120px"
-            className={`${styles.newsPic} object-contain`}
+            className={` object-contain`}
           ></Image>
           <Image
             src={company8}
@@ -133,12 +129,12 @@ export default function Home() {
 
       {/* section posts */}
       <section
-        className={`${styles.posts} section grid justify-items-center items-start gap-y-12 lg:grid-cols-2 pt-[0]  `}
+        className={`section grid justify-items-center items-start gap-y-12 lg:grid-cols-2 pt-[0]  `}
       >
-        <div className={`${styles.post} mx-8 max-w-[30rem]`}>
+        <div className={` mx-8 max-w-[30rem]`}>
           <h1 className="mb-4 sm:text-2xl xs:text-xl ">
             <span
-              className={`${styles.postSpan} px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
+              className={` px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
             >
               BW BUSINESSWORLD
             </span>{" "}
@@ -149,10 +145,10 @@ export default function Home() {
           </div>
           <p className="text-center text-slate-500 text-sm ">1 Minute Read</p>
         </div>
-        <div className={`${styles.post} mx-8 max-w-[30rem]`}>
+        <div className={` mx-8 max-w-[30rem]`}>
           <h1 className="mb-4 sm:text-2xl xs:text-xl ">
             <span
-              className={`${styles.postSpan} px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
+              className={` px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
             >
               ENTRACKR Gurucool
             </span>{" "}
@@ -163,10 +159,10 @@ export default function Home() {
           </div>
           <p className="text-center text-slate-500 text-sm ">1 Minute Read</p>
         </div>
-        <div className={`${styles.post} mx-8 max-w-[30rem]`}>
+        <div className={` mx-8 max-w-[30rem]`}>
           <h1 className="mb-4 sm:text-2xl xs:text-xl ">
             <span
-              className={`${styles.postSpan} px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
+              className={` px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
             >
               STARTUPPEDIA
             </span>{" "}
@@ -177,10 +173,10 @@ export default function Home() {
           </div>
           <p className="text-center text-slate-500 text-sm ">1 Minute Read</p>
         </div>
-        <div className={`${styles.post} mx-8 max-w-[30rem]`}>
+        <div className={` mx-8 max-w-[30rem]`}>
           <h1 className="mb-4 sm:text-2xl xs:text-xl ">
             <span
-              className={`${styles.postSpan} px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
+              className={` px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
             >
               ANNOUNCEMENT
             </span>{" "}
@@ -192,10 +188,10 @@ export default function Home() {
           </div>
           <p className="text-center text-slate-500 text-sm ">1 Minute Read</p>
         </div>
-        <div className={`${styles.post} mx-8 max-w-[30rem]`}>
+        <div className={` mx-8 max-w-[30rem]`}>
           <h1 className="mb-4 sm:text-2xl xs:text-xl ">
             <span
-              className={`${styles.postSpan} px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
+              className={` px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
             >
               BUCKETBUFF
             </span>{" "}
@@ -207,10 +203,10 @@ export default function Home() {
           </div>
           <p className="text-center text-slate-500 text-sm ">1 Minute Read</p>
         </div>
-        <div className={`${styles.post} mx-8 max-w-[30rem]`}>
+        <div className={` mx-8 max-w-[30rem]`}>
           <h1 className="mb-4 sm:text-2xl xs:text-xl ">
             <span
-              className={`${styles.postSpan} px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
+              className={` px-2 rounded-md text-sm border-[1px] border-gray-400 border-solid`}
             >
               AWARESHALA
             </span>{" "}
@@ -224,7 +220,7 @@ export default function Home() {
       </section>
       {/* section history */}
       <section
-        className={`${styles.history} max-w-[70rem] section flex flex-col justify-center items-center`}
+        className={` max-w-[70rem] section flex flex-col justify-center items-center`}
       >
         <h1 className="text-center mb-8 font-medium xs:text-3xl sm:text-4xl ">
           Today in Gurucool history
@@ -235,7 +231,7 @@ export default function Home() {
         <p className="text-center font-light mb-8  xs:text-xl sm:text-3xl ">
           Shaheen Shifa's 8th birthday
         </p>
-        <Image src={history} className={styles.history}></Image>
+        <Image src={history}></Image>
       </section>
     </div>
   );

@@ -1,9 +1,11 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Footer from "./components/Footer";
+import MyNavbar from "./components/navbar";
+
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div className="overflow-hidden max-w-[1600px] m-auto">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +25,7 @@ function MyApp({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>{" "}
+      <MyNavbar />
       <Component {...pageProps} />;
       <Footer />
     </div>
